@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet"> 
+    <title>ЧГК Осло</title>
+  </head>
+  <body>
+    <section class="statistic statistic-points">
+      <h2>Итоги игр (баллы)</h2>
+      <ul class="bar-chart">
+      </ul>
+      <ul class="pagination">
+        <span>Игры:</span>
+        <li class="pagination__element"><button class="pagination__button pagination__button--1" type="button">9 февраля</button></li>
+        <li class="pagination__element"><button class="pagination__button pagination__button--2" type="button">7 марта</button></li>
+        <li class="pagination__element"><button class="pagination__button pagination__button--3" type="button">6 апреля</button></li>
+        <li class="pagination__element"><button class="pagination__button pagination__button--4" type="button">24 мая</button></li>
+      </ul>
+    </section>
+    <template id="bar-template">
+      <li class="bar-chart__element-container">
+        <button type="button" class='bar-chart__element'>
+          <span class="bar-chart__element-name"></span>
+          <span class="visually-hidden bar-chart__element-data"></span>
+        </button>
+      </li>  
+    </template>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
