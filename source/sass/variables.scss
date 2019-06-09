@@ -1,0 +1,57 @@
+// Breakpoints
+$s-width: 320px;
+$s-width-max: 767px;
+$s-width-padding: 22px;
+
+$m-width: 768px;
+$m-width-max: 1149px;
+// $m-width-padding: 22px;
+
+// $l-width: 1150px;
+// $l-width-max: 767px;
+// $l-width-padding: 22px;
+
+// Colors
+$black: #000000;
+$blackish: #252525; // Dark input background active, dark stroke active, dark background
+$white: #f8f5f2; //Background
+$white-transparent: rgba(248,	245,	242, 0.3); //Background
+$whitish: #f7f4f1; //Text
+
+
+$super-dark-brown: #6a4d38; // Button, menu button pressed, link active
+$dark-brown: #755a46; //Menu button hover
+$brown: #826550; // Button pressed, underline, menu button, link hover
+$light-brown: #d5c9bd; // Checkbox background, strokes hover
+$superlight-brown: #e5ddd5; // Srokes
+
+
+$super-light-grey: #aeaeae; // Button disabled
+$light-grey: #999999; //Input down stroke
+$grey: #545454; // Dark stroke hover
+$dark-grey: #3f3f3f; // Dark stroke
+$super-dark-grey: #292929; // Dark background
+
+
+$color-darkest: $black;
+$color-darkest-light: $blackish;
+$color-lightest-transpatent: $white-transparent;  
+$color-lightest: $white;
+$color-lightest-dark: $whitish;
+
+$color-main-darkest: $super-dark-brown;
+$color-main-dark: $dark-brown;
+$color-main: $brown;
+$color-main-light: $light-brown;
+$color-main-lightest: $superlight-brown;
+
+$color-basic-lightest: $super-light-grey;
+$color-basic-light: $light-grey;
+$color-basic: $grey;
+$color-basic-dark: $dark-grey;
+$color-basic-darkest: $super-dark-grey;
+
+
+
+
+

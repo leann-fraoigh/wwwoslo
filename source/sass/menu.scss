@@ -1,0 +1,30 @@
+.menu {
+  @include reset-list-style;
+}
+
+.menu__link {
+  @include reset-link-style;
+
+  display: block;
+  padding: 13px 40px 13px 100px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-lightest-dark;
+  text-transform: uppercase;
+
+  background-color: $color-main;
+  border-bottom: 1px solid $color-main-darkest; 
+
+  &:hover,
+  &:focus {
+    background-color: $color-main-dark;
+  }
+
+  &:active {
+    color: $color-lightest-transpatent;
+    background-color: $color-main-darkest;
+  }
+}
+

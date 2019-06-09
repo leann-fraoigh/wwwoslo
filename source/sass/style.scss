@@ -1,17 +1,17 @@
-body {
-  font-family: 'PT Sans', sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@charset "utf-8";
+@import "normalize";
+@import "visually-hidden";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "wrapper";
+@import "button";
+@import "page";
+@import "header";
+@import "nav";
+@import "menu";
+@import "logo";
+@import "teams";
 
 .bar-chart {
   position: relative;
@@ -82,7 +82,7 @@ body {
 .pagination__button {
   /* width: 25px; */
   display: inline;
-  height: 25px;
+  // height: 25px;
   padding: 5px 10px 20px 10px; 
   /* color: MidnightBlue; */
   background-color: WhiteSmoke;
@@ -94,4 +94,3 @@ button:hover,
 button:focus {
   background-color: DarkGray;
 }
-

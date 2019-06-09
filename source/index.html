@@ -2,34 +2,174 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet"> 
     <title>ЧГК Осло</title>
+    <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preloaded" href="fonts/pt-sans-narrow-v10-latin_cyrillic-700.woff2" as="font">
+    <link rel="preloaded" href="fonts/pt-sans-narrow-v10-latin_cyrillic-regular.woff2" as="font">
+    <link href="https://fonts.googleapis.com/css?family=Pattaya|Russo+One&display=swap" rel="stylesheet"> 
   </head>
-  <body>
-    <section class="statistic statistic-points">
-      <h2>Итоги игр (баллы)</h2>
-      <ul class="bar-chart">
-      </ul>
-      <ul class="pagination">
-        <span>Игры:</span>
-        <li class="pagination__element"><button class="pagination__button pagination__button--1" type="button">9 февраля</button></li>
-        <li class="pagination__element"><button class="pagination__button pagination__button--2" type="button">7 марта</button></li>
-        <li class="pagination__element"><button class="pagination__button pagination__button--3" type="button">6 апреля</button></li>
-        <li class="pagination__element"><button class="pagination__button pagination__button--4" type="button">24 мая</button></li>
-      </ul>
-    </section>
-    <template id="bar-template">
-      <li class="bar-chart__element-container">
-        <button type="button" class='bar-chart__element'>
-          <span class="bar-chart__element-name"></span>
-          <span class="visually-hidden bar-chart__element-data"></span>
-        </button>
-      </li>  
-    </template>
+  <body class="page">
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <a href="#" class="header__logo logo">ЧГК Осло</a>
+        <!--Menu opened - nav--menu-opened Menu closed - nav--menu-closed-->
+        <nav class="header__nav nav nav--no-js">
+          <button class="nav__toggler button button--icon" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="nav__menu menu">
+            <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="#teams">Команды</a></li>
+            <li class="menu__item"><a class="menu__link" href="#games">Результаты игр</a></li>
+            <li class="menu__item"><a class="menu__link" href="#rules">Правила</a></li>
+            <li class="menu__item"><a class="menu__link" href="#organizers">Организаторы</a></li>
+          </ul>
+        </nav>
+      </div>  
+    </header>
+    <main class="main">
+      <section class="about wrapper">
+        <h2 class="" id="about"><span class="visually-hidden">О нас</span></h2>
+        <p>Что? Где? Когда? в Осло!</p>
+        <p>РуНо приглашает принять участие в спортивной версии игры. Хотите освежить свои знания, проверить логику и умение работать в команде? Регистрируйтесь на ближайшую игру!</p>
+      </section>
+      <section class="teams">
+        <div class="teams__wrapper wrapper">
+          <h2 class="" id="teams">Команды</h2>
+          <button class="teams__slider-button teams__slider-button--left button button--icon" type="button"><span class="visually-hidden">Назад</span></button>
+          <button class="teams__slider-button--right teams__slider-button button button--icon" type="button"><span class="visually-hidden">Вперед</span></button>
+          <ul class="teams__list">
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Диплодоки</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Друзья друзей Друзя</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Излишки разума</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Калабаха чебураха</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Клевер</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Корги Чака Норриса</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Кусочек брюнуста</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Мозголатура</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Пламя</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Роковые ботаники</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Синергия</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="../img/tomat-i-paelia.jpg" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Томат и паэлья</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Торговые воротнички</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Шесть извилин</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Экстрим</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Якорь</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Always moving forward</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">SVARщики</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Тут могла бы быть ваша команда</p>
+            </li>
+            <li class="teams__item">
+              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
+              <p class="teams__name">Тут могла бы быть ваша команда</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="games">
+        <h2 class="" id="games">Результаты игр</h2>
+      </section>
+      <section class="rules">
+        <h2 class="" id="rules">Правила</h2>
+        <ul>
+          <li>Три раунда по 12 вопросов, минута на ответ. Случаются блицы и суперблицы!</li>
+          <li>В команде от трех до шести человек. Возможна замена одного игрока в течение раунда.</li>
+          <li>Место проведения игры и сумму взноса для команд уточняйте перед игрой.</li>
+          <li>Информация о будущих турнирах, ссылки на регистрацию, возможность присоединитсья к одной из команд и многое другое &mdash; в <a href="https://www.facebook.com/UFRuNo">группе на Facebook</a></li>.
+        </ul>
+      </section>
+      <section class="organizers">
+        <h2 class="" id="organizers">Организаторы</h2>
+        <p>РуНо – молодёжное некоммерческое объединение...</p>
+      </section>
+    </main>
+    <footer>
+    </footer>
 
-    <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
+    <section>      
 
+      <!-- <section class="statistic statistic-points">
+        <h2>Итоги игр (баллы)</h2>
+        <ul class="bar-chart">
+        </ul>
+        <ul class="pagination">
+          <span>Игры:</span>
+          <li class="pagination__element"><button class="pagination__button pagination__button--1" type="button">9 февраля</button></li>
+          <li class="pagination__element"><button class="pagination__button pagination__button--2" type="button">7 марта</button></li>
+          <li class="pagination__element"><button class="pagination__button pagination__button--3" type="button">6 апреля</button></li>
+          <li class="pagination__element"><button class="pagination__button pagination__button--4" type="button">24 мая</button></li>
+        </ul>
+      </section>
+      <template id="bar-template">
+        <li class="bar-chart__element-container">
+          <button type="button" class='bar-chart__element'>
+            <span class="bar-chart__element-name"></span>
+            <span class="visually-hidden bar-chart__element-data"></span>
+          </button>
+        </li>  
+      </template>
+    </section> -->
+
+    <script src="js/data.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/menu.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,18 @@
+.wrapper {
+  box-sizing: border-box;
+  width: $s-width;
+  margin: 0 auto;
+  padding-right: $s-width-padding;
+  padding-left: $s-width-padding;
+
+  // @media (min-width: $m-width) {
+  //   width: $m-width;
+  // padding: $m-width-padding;
+
+  // }
+
+  // @media (min-width: $l-width) {
+  //   width: $l-width;
+  //   padding: $l-width-padding;
+  // }  
+}
