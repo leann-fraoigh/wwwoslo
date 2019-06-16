@@ -1,0 +1,19 @@
+.modal {
+  // display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // top: 0;
+  // left: 0;
+  z-index: 100;
+  display: none;
+
+  background-color: $color-basic-dark;
+
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 30px 50px 0 rgba($color-darkest, 75%);
+
+  &--opened {
+    display: block;
+  }
+}

@@ -30,105 +30,400 @@
       </div>  
     </header>
     <main class="main">
-      <section class="about wrapper">
-        <h2 class="" id="about"><span class="visually-hidden">О нас</span></h2>
+      <section class="about wrapper" id="about">
+        <h2 class=""><span class="visually-hidden">О нас</span></h2>
         <p>Что? Где? Когда? в Осло!</p>
         <p>РуНо приглашает принять участие в спортивной версии игры. Хотите освежить свои знания, проверить логику и умение работать в команде? Регистрируйтесь на ближайшую игру!</p>
       </section>
-      <section class="teams">
+      <section class="teams" id="teams">
         <div class="teams__wrapper wrapper">
-          <h2 class="" id="teams">Команды</h2>
+          <h2 class="">Команды</h2>
           <button class="teams__slider-button teams__slider-button--left button button--icon" type="button"><span class="visually-hidden">Назад</span></button>
           <button class="teams__slider-button--right teams__slider-button button button--icon" type="button"><span class="visually-hidden">Вперед</span></button>
-          <ul class="teams__list">
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Диплодоки</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Друзья друзей Друзя</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Излишки разума</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Калабаха чебураха</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Клевер</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Корги Чака Норриса</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Кусочек брюнуста</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Мозголатура</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Пламя</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Роковые ботаники</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Синергия</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="../img/tomat-i-paelia.jpg" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Томат и паэлья</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Торговые воротнички</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Шесть извилин</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Экстрим</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Якорь</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Always moving forward</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">SVARщики</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Тут могла бы быть ваша команда</p>
-            </li>
-            <li class="teams__item">
-              <picture class="teams__photo-container"><img src="#" alt="" class="teams__photo"></picture>
-              <p class="teams__name">Тут могла бы быть ваша команда</p>
-            </li>
-          </ul>
+          <!-- <div class="teams__list-container"> -->
+            <ul class="teams__list">
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Диплодоки</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Диплодоки</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/dryzia.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Друзья друзей Друзя</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/dryzia.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Друзья друзей Друзя</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/izlishki.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Излишки разума</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/izlishki.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Излишки разума</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/kolobaha.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Калабаха чебураха</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/kolobaha.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Калабаха чебураха</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/klever.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Клевер</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/klever.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Клевер</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/korgi.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Корги Чака Норриса</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/korgi.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Корги Чака Норриса</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Кусочек брюнуста</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Кусочек брюнуста</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/mozgolatura.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Мозголатура</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/mozgolatura.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Мозголатура</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/plamya.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Пламя</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/plamya.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Пламя</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/rokoviye.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Роковые ботаники</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/rokoviye.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Роковые ботаники</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/sinergiya.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Синергия</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/sinergiya.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Синергия</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/tomat-i-paelia.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button" type="button">Томат и паэлья</button>
+                <!-- Modal opened .modal--opened -->
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/tomat-i-paelia.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Томат и паэлья</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan">Екатерина Кузьмина</li>
+                    <li class="teams__players-item">Андрей</li>
+                    <li class="teams__players-item">Дарья</li>
+                    <li class="teams__players-item">Дмитрий</li>
+                    <li class="teams__players-item">Николай</li>
+                    <li class="teams__players-item">Олександра</li>
+                    <li class="teams__players-item">Петр</li>
+                    <li class="teams__players-item">Сергей</li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/torgoviye.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Торговые воротнички</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/torgoviye.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Торговые воротнички</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/six.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Шесть извилин</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/six.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Шесть извилин</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Экстрим</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Экстрим</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/yakor.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Якорь</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/yakor.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Якорь</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Always moving forward</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Always moving forward</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/svarshiki.jpg" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">SVARщики</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/svarshiki.jpg" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">SVARщики</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Тут могла бы быть ваша команда</button>
+                <section class="teams__modal modal">
+                  <picture class="teams__modal-photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__modal-photo" width="230px" height="auto"></picture>
+                  <h3 class="teams__modal-title">Ваша команда</h3>
+                  <ul class="teams__players-list">
+                    <li class="teams__players-item teams__players-item--capitan"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                    <li class="teams__players-item"></li>
+                  </ul>
+                </section>
+              </li>
+              <!-- <li class="teams__item">
+                <picture class="teams__photo-container"><img src="../img/photo-placeholder.png" alt="" class="teams__photo" width="88px" height="88px"></picture>
+                <button class="teams__name button">Тут могла бы быть ваша команда</button>
+              </li> -->
+            </ul>
+          <!-- </div> -->
         </div>
       </section>
-      <section class="games">
-        <h2 class="" id="games">Результаты игр</h2>
+      <section class="games wrapper" id="games">
+        <h2 class="h2">Результаты игр</h2>
+        <section class="games__stat score">
+          <h3 class="h3">Итоги игр (баллы)</h3>
+          <section class="statistic statistic-points">
+            <ul class="score__diagram">
+            </ul>
+            <ul class="score__pagination-list">
+              <span>Игры:</span>
+              <li class="score__pagination-element"><button class="score__pagination-button score__pagination-button--1" type="button">9 февраля</button></li>
+              <li class="score__pagination-element"><button class="score__pagination-button score__pagination-button--2" type="button">7 марта</button></li>
+              <li class="score__pagination-element"><button class="score__pagination-button score__pagination-button--3" type="button">6 апреля</button></li>
+              <li class="score__pagination-element"><button class="score__pagination-button score__pagination-button--4" type="button">24 мая</button></li>
+            </ul>
+          </section>
+          <template id="score__diagram-template">
+            <li class="score__diagram-element-container">
+              <button type="button" class='score__diagram-element'>
+                <span class="score__diagram-element-name"></span>
+                <span class="visually-hidden score__diagram-element-data"></span>
+              </button>
+            </li>  
+          </template>
+        </section>
+        </section>
+        <section class="games__stat rating">
+          <h3 class="h3"></h3>
+        </section>
       </section>
-      <section class="rules">
-        <h2 class="" id="rules">Правила</h2>
+      <section class="rules" id="rules">
+        <h2 class="">Правила</h2>
         <ul>
           <li>Три раунда по 12 вопросов, минута на ответ. Случаются блицы и суперблицы!</li>
           <li>В команде от трех до шести человек. Возможна замена одного игрока в течение раунда.</li>
@@ -136,40 +431,24 @@
           <li>Информация о будущих турнирах, ссылки на регистрацию, возможность присоединитсья к одной из команд и многое другое &mdash; в <a href="https://www.facebook.com/UFRuNo">группе на Facebook</a></li>.
         </ul>
       </section>
-      <section class="organizers">
-        <h2 class="" id="organizers">Организаторы</h2>
+      <section class="organizers" id="organizers">
+        <h2 class="">Организаторы</h2>
         <p>РуНо – молодёжное некоммерческое объединение...</p>
       </section>
     </main>
     <footer>
+      <!-- Open overlay: .overlay--showed -->
+      <div class="overlay"></div>
     </footer>
 
     <section>      
 
-      <!-- <section class="statistic statistic-points">
-        <h2>Итоги игр (баллы)</h2>
-        <ul class="bar-chart">
-        </ul>
-        <ul class="pagination">
-          <span>Игры:</span>
-          <li class="pagination__element"><button class="pagination__button pagination__button--1" type="button">9 февраля</button></li>
-          <li class="pagination__element"><button class="pagination__button pagination__button--2" type="button">7 марта</button></li>
-          <li class="pagination__element"><button class="pagination__button pagination__button--3" type="button">6 апреля</button></li>
-          <li class="pagination__element"><button class="pagination__button pagination__button--4" type="button">24 мая</button></li>
-        </ul>
-      </section>
-      <template id="bar-template">
-        <li class="bar-chart__element-container">
-          <button type="button" class='bar-chart__element'>
-            <span class="bar-chart__element-name"></span>
-            <span class="visually-hidden bar-chart__element-data"></span>
-          </button>
-        </li>  
-      </template>
-    </section> -->
-
     <script src="js/data.min.js"></script>
     <script src="js/script.min.js"></script>
     <script src="js/menu.min.js"></script>
+    <script src="js/slider.min.js"></script>
+    <script src="js/modal.min.js"></script>
+
+
   </body>
 </html>

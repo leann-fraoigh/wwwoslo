@@ -1,4 +1,8 @@
 .button {
+  display: block;
+  width: 100%;
+
+  color: inherit;
   background-color: transparent;
   cursor: pointer;
 
@@ -9,6 +13,10 @@
 
   &:active {
     background-color: transparent;
+    opacity: .3;
+  }
+
+  &[disabled] {
     opacity: .3;
   }
 

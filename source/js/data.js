@@ -314,7 +314,8 @@ var TEAMS_RESULTS = [
   },
 
   {
-    name: "Always moving forward aka Отложенный успех",
+    // aka Отложенный успех
+    name: "Always moving forward",
     game1: {
       qestions: 0,
       points: 0,
