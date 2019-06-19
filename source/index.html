@@ -20,11 +20,11 @@
         <nav class="header__nav nav nav--no-js">
           <button class="nav__toggler button button--icon" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="nav__menu menu">
-            <li class="menu__item"><a class="menu__link link" href="#about">О нас</a></li>
-            <li class="menu__item"><a class="menu__link link" href="#teams">Команды</a></li>
-            <li class="menu__item"><a class="menu__link link" href="#games">Результаты игр</a></li>
-            <li class="menu__item"><a class="menu__link link" href="#rules">Правила</a></li>
-            <li class="menu__item"><a class="menu__link link" href="#organizers">Организаторы</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="#teams">Команды</a></li>
+            <li class="menu__item"><a class="menu__link" href="#games">Результаты игр</a></li>
+            <li class="menu__item"><a class="menu__link" href="#rules">Правила</a></li>
+            <li class="menu__item"><a class="menu__link" href="#organizers">Организаторы</a></li>
           </ul>
         </nav>
       </div>  
@@ -393,8 +393,8 @@
           <!-- </div> -->
         </div>
       </section>
-      <section class="games wrapper" id="games">
-        <!--<div class="games__wrapper wrapper">-->
+      <section class="games" id="games">
+        <div class="games__wrapper wrapper">
           <h2 class="games__title">Результаты игр</h2>
           <section class="games__stat score">
             <h3 class="h3">Итоги игр (баллы)</h3>
@@ -422,7 +422,7 @@
           <section class="games__stat rating">
             <h3 class="h3"></h3>
           </section>
-        <!-- </div>   -->
+        </div>  
       </section>
       <section class="rules wrapper" id="rules">
         <h2 class="rules__title">Правила</h2>
@@ -438,29 +438,30 @@
         <p>РуНо – молодёжное некоммерческое объединение...</p>
       </section>
     </main>
-    <footer class="footer wrapper">
-      <p class="footer__contacts"><span class="footer__contacts-name">Молодёжное объединение РуНо</span><br>
-      Ungdomsforening RuNo 
-      <a href="http://www.ru-no.com/" class="footer__contacts-link link">ru-no.com</a>    
-    </p>
-      <section class="footer__social">
-        <h2 class="visually-hidden">РуНо в соцсетях</h2>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a href="https://www.facebook.com/UFRuNo/" class="footer__social-link button button--ghost"><span class="visually-hidden">Фейсбук</span><svg class="footer__social-icon" width="30px" height="30px"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a>
-          </li>
-          <li class="footer__social-item">
-            <a href="https://www.instagram.com/runo.oslo/" class="footer__social-link button button--ghost"><span class="visually-hidden">Инстаграм</span><svg class="footer__social-icon" width="30px" height="30px"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer__credits">
-        <p>Icons made by: <a href="https://www.freepik.com/" title="Freepik" class="link">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="link">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank" class="link">CC 3.0 BY</a>, <a href="https://htmlacademy.ru/" target="_blank" class="link">HTML Academy</a></p>
-      </section>
-      <a href="https://github.com/leann-fraoigh" class="footer__copywrite footer__copywrite-link link">Leann Fraoigh</a>
-      <!-- Open overlay: .overlay--showed -->
-      <div class="overlay"></div>
-
+    <footer class="footer">
+      <div class="footer__wrapper wrapper">
+        <p class="footer__contacts"><span class="footer__contacts-name">Молодёжное объединение РуНо</span><br>
+        Ungdomsforening RuNo 
+        <a href="http://www.ru-no.com/" class="footer__contacts-link link">ru-no.com</a>    
+      </p>
+        <section class="footer__social">
+          <h2 class="visually-hidden">РуНо в соцсетях</h2>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="https://www.facebook.com/UFRuNo/" class="footer__social-link button button--ghost"><span class="visually-hidden">Фейсбук</span><svg class="footer__social-icon" width="30px" height="30px"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://www.instagram.com/runo.oslo/" class="footer__social-link button button--ghost"><span class="visually-hidden">Инстаграм</span><svg class="footer__social-icon" width="30px" height="30px"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__credits">
+          <p>Icons made by: <a href="https://www.freepik.com/" title="Freepik" class="link">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="link">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank" class="link">CC 3.0 BY</a>, <a href="https://htmlacademy.ru/" target="_blank" class="link">HTML Academy</a></p>
+        </section>
+        <a href="https://github.com/leann-fraoigh" class="footer__copywrite footer__copywrite-link link">Leann Fraoigh</a>
+        <!-- Open overlay: .overlay--showed -->
+        <div class="overlay"></div>
+      </div>    
     </footer>
 
     <section>      
