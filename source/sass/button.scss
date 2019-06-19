@@ -25,4 +25,19 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &--ghost {
+    text-transform: uppercase;
+    border: 1px solid $color-main-lightest;
+    
+    &:hover,
+    &:focus {
+      border-color: $color-main-light;
+    }
+
+    &:active {
+      color: $color-darkest-transparent;
+      background-color: $color-main-light;
+    }  
+  }
 }

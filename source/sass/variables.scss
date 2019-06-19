@@ -13,6 +13,7 @@ $m-width-max: 1149px;
 
 // Colors
 $black: #000000;
+$black-transparent: rgba(0, 0, 0, 0.3);
 $blackish: #252525; // Dark input background active, dark stroke active, dark background
 $white: #f8f5f2; //Background
 $white-transparent: rgba(248,	245,	242, 0.3); //Background
@@ -32,7 +33,7 @@ $grey: #545454; // Dark stroke hover
 $dark-grey: #3f3f3f; // Dark stroke
 $super-dark-grey: #292929; // Dark background
 
-
+$color-darkest-transparent: $black-transparent;
 $color-darkest: $black;
 $color-darkest-light: $blackish;
 $color-lightest-transpatent: $white-transparent;  

@@ -1,0 +1,67 @@
+.footer {
+  @include theme-dark;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 48px;
+  padding-bottom: 5px;
+  // padding: 0;
+}
+
+.footer__contacts {
+  text-align: center;
+}
+
+.footer__contacts-name {
+  font-weight: 700;
+}
+
+.footer__social-list {
+  @include reset-list-style;
+
+  display: flex;
+  justify-content: center;
+  // padding-left: $s-width-padding;
+  // padding-right: $s-width-padding;
+}
+
+.footer__social-item {
+  flex-grow: 0;
+
+  &:not(:first-child) {
+    margin-left: -1px;
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+}
+
+.footer__social-link:active
+.footer__social-icon {
+  fill: $color-lightest-transpatent;
+}
+
+.footer__social-icon {
+  fill: $color-lightest;
+}
+
+.footer__copywrite {
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer__credits {
+  // padding-left: $s-width-padding;
+  // padding-right: $s-width-padding;
+  width: 100%;
+
+  font-size: 12px;
+  color: $color-lightest-transpatent;
+}

@@ -6,17 +6,47 @@
   list-style: none;
 }
 
-@mixin reset-link-style {
-  color: inherit;
-  text-decoration: none;
+@mixin theme-dark {
+  color: $color-lightest;
+  
+  background-color: $color-basic-darkest;
+
+  .link {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $color-lightest-transpatent;
+    }
+  }
+
+  .button--ghost {
+    border-color: $color-basic-dark;
+    
+    &:hover,
+    &:focus {
+      border-color: $color-basic;
+    }
+
+    &:active {
+      color: $color-lightest-transpatent;
+      background-color: $color-darkest-light;
+      border-color: $color-darkest-light;
+    }   
+  }
 }
 
-@mixin title-h2 {
+@mixin reset-h2-style {
+  margin: 0;
+
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
-@mixin title-h3 {
-  font-size: 24px;
-  line-height: 27px;
-}
+// @mixin title-h3 {
+//   font-size: 24px;
+//   line-height: 27px;
+// }
