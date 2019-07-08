@@ -396,19 +396,28 @@
       <section class="games" id="games">
         <div class="games__wrapper wrapper">
           <h2 class="games__title">Результаты игр</h2>
-          <section class="games__stat score">
-            <h3 class="h3">Итоги игр (баллы)</h3>
-            <section class="statistic statistic-points">
-              <ul class="score__diagram">
-              </ul>
+          <ul class="games__tab-list">
+            <li class="games__tab-item">
+              <!--Class active: games__tab-button--active -->
+              <button class="games__tab-button games__tab-button--active button button--ghost" onclick="openTab(event, 'score')">Баллы</button>
+            </li>
+            <li class="games__tab-item">
+              <button class="games__tab-button button button--ghost" onclick="openTab(event, 'rating')">Рейтинг</button>
+            </li>
+          </ul>
+          <section class="games__stat score" id="score">
+            <h3 class="h3 visually-hidden">Баллы</h3>
+            <ul class="score__diagram">
+            </ul>
+            <div class="score__pagination-container"> 
+              <p class="score__pagination-description">2019:</p>
               <ul class="score__pagination-list">
-                <span>Игры:</span>
-                <li class="score__pagination-element"><button class="score__pagination-button score__pagination-button--1" type="button">9 февраля</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button score__pagination-button--2" type="button">7 марта</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button score__pagination-button--3" type="button">6 апреля</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button score__pagination-button--4" type="button">24 мая</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="createChart(event, '1')">09.02</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="createChart(event, '2')">07.03</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="createChart(event, '3')">06.04</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="createChart(event, '4')">24.05</button></li>
               </ul>
-            </section>
+            </div>  
             <template id="score__diagram-template">
               <li class="score__diagram-element-container">
                 <button type="button" class='score__diagram-element'>
@@ -417,6 +426,12 @@
                 </button>
               </li>  
             </template>
+          </section>
+          <section class="games__stat rating" id="rating" style="display:none">
+            <h3 class="h3 visually-hidden">Рейтинг</h3>
+            <p>Извините, статистика пока не готова</p>
+            <ul class="rating__diagram">
+            </ul>
           </section>
           </section>
           <section class="games__stat rating">
@@ -435,7 +450,8 @@
       </section>
       <section class="organizers wrapper" id="organizers">
         <h2 class="organizers__title">Организаторы</h2>
-        <p>РуНо – молодёжное некоммерческое объединение...</p>
+        <p><b>РуНо</b> – базирующееся в Осло молодёжное некоммерческое объединение для всех, кто интересуется русским языком и культурой.</p>
+        <p><a href="https://www.facebook.com/UFRuNo/?eid=ARDVvyjZGy9yg9E8wrgOpgazceHfgZeToCSA5zm6KJzVKsn59zBRusBxqaH5j2HRv4i-RK8ngs9frHZq" target="_blank" class="link">Узнайте больше и присоединяйтесь!</a></p>
       </section>
     </main>
     <footer class="footer">
@@ -467,10 +483,12 @@
     <section>      
 
     <script src="js/data.min.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/score.min.js"></script>
     <script src="js/menu.min.js"></script>
     <script src="js/slider.min.js"></script>
     <script src="js/modal.min.js"></script>
+    <script src="js/tab.min.js"></script>
+
 
 
   </body>

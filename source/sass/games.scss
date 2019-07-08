@@ -1,0 +1,60 @@
+.games {
+  position: relative;
+
+  padding-top: 30px;
+
+  color: $color-lightest;
+  
+  background-color: $color-darkest-light;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: $s-width;
+    height: 34px;
+    box-sizing: border-box;
+
+    border-left: ($s-width / 2) solid transparent;
+    border-right: ($s-width / 2) solid transparent;
+    border-top: 34px solid $color-darkest-light;
+  }
+}
+
+.games__wrapper {
+  padding-bottom: 20px;
+}
+
+.games__title {
+  @include reset-h2-style;
+}
+
+.games__tab-list {
+  @include reset-list-style;
+
+  display: flex;
+}
+
+.games__tab-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.games__tab-button {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
+  border-bottom-width: 2px;
+
+  &--active {
+    border-color: $color-basic-light;
+  }
+}
+// While score section is empty
+.games__stat {
+  min-height: 737px;
+}
+

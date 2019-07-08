@@ -28,11 +28,12 @@
 
   &--ghost {
     text-transform: uppercase;
-    border: 1px solid $color-main-lightest;
+    border: 1px solid $color-basic;
+
     
     &:hover,
     &:focus {
-      border-color: $color-main-light;
+      border-color: $color-basic-light;
     }
 
     &:active {
