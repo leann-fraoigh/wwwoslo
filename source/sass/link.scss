@@ -1,0 +1,14 @@
+.link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-main;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $color-main-darkest;
+  }
+}
