@@ -75,15 +75,3 @@ if (/Mobi|Android/i.test(navigator.userAgent)) {
     });
   };
 }
-
-
-
-// var mobile = function () {
-//   if (/Mobi|Android/i.test(navigator.userAgent)) {
-//     card.style.color = "red"; 
-//   } else {
-//     card.style.color = "blue";
-//   }
-// }
-// 
-// mobile();
