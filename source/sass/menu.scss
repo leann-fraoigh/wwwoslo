@@ -3,8 +3,6 @@
 }
 
 .menu__link {
-  @include reset-link-style;
-
   display: block;
   padding: 13px 40px 13px 100px;
 
