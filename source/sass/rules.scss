@@ -1,0 +1,16 @@
+.rules {
+  padding-top: 30px;
+}
+
+.rules__title {
+  @include reset-h2-style;
+}
+.rules__list {
+  // @include reset-list-style;
+  // list-style: square outside url("../img/owl.svg");
+  list-style: square;
+}
+
+.rules__item:not(:last-child) {
+  margin-bottom: 10px;
+}
