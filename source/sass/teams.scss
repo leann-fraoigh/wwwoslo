@@ -1,4 +1,5 @@
 .teams {
+  padding-top: 30px;
 
   color: $color-lightest;
   
@@ -31,10 +32,17 @@
   }
 }
 
+.teams__title {
+  @include reset-h2-style;
+
+  padding-right: $s-width-padding;
+  padding-left: $s-width-padding;
+}
+
 .teams__slider-button {
   position: absolute;
   content: "";
-  top: 50%;
+  top: 45%;
   z-index: 20;
 
   width: 16px;
@@ -67,8 +75,10 @@
   overflow: hidden;
 
   flex-wrap: wrap;
-  height: 376px;
+  height: 366px;
+  padding-top: 20px;
   padding-left: 28px;
+  padding-bottom: 15px;
 
   font-size: 16px;
   line-height: 18px;

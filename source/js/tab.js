@@ -16,3 +16,5 @@ var openTab = function(evt, tabName) {
    document.getElementById(tabName).style.display = "block";
    event.target.className += " games__tab-button--active";
 }
+
+// openTab("click", "score");

@@ -1,7 +1,22 @@
 .header {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+
   color: $color-lightest;
   
   background-color: $color-darkest-light;
+
+  // &--hidden {
+  //   transform: translate(0, -85px);
+  //   transition: transform .2s;
+  // }
+  // &--showed {
+  //   transform: translate(0, 0);
+  //   transition: transform .2s;
+  // }
+
 }
 
 .header__wrapper {
