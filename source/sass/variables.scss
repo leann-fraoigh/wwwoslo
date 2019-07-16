@@ -10,6 +10,11 @@ $m-width-padding: 64px;
 $l-width: 1200px;
 $l-width-padding: 120px;
 
+// Resolution
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+
 // Colors
 $black: #000000;
 $black-transparent: rgba(0, 0, 0, 0.3);
@@ -51,6 +56,8 @@ $color-basic-light: $light-grey;
 $color-basic: $grey;
 $color-basic-dark: $dark-grey;
 $color-basic-darkest: $super-dark-grey;
+
+$header-background-color: #4C5E6F;
 
 
 
