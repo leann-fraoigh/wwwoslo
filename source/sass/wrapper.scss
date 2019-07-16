@@ -1,18 +1,28 @@
 .wrapper {
   box-sizing: border-box;
-  width: $s-width;
   margin: 0 auto;
-  padding-right: $s-width-padding;
-  padding-left: $s-width-padding;
+}
 
-  // @media (min-width: $m-width) {
-  //   width: $m-width;
-  // padding: $m-width-padding;
+@media (min-width: $s-width) and (max-width: $s-width-max) {
+  .wrapper {
+    width: $s-width;
+    padding-right: $s-width-padding;
+    padding-left: $s-width-padding;
+  }
+}
 
-  // }
+@media (min-width: $m-width) {
+  .wrapper {
+    width: $m-width;
+    padding-right: $m-width-padding;
+    padding-left: $m-width-padding;
+  }
+}
 
-  // @media (min-width: $l-width) {
-  //   width: $l-width;
-  //   padding: $l-width-padding;
-  // }  
+@media (min-width: $l-width) {
+  .wrapper {
+    width: $l-width;
+    padding-right: $l-width-padding;
+    padding-left: $l-width-padding;
+  }
 }
