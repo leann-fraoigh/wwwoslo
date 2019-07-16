@@ -1,4 +1,6 @@
 .nav {
+  background-color: $color-darkest;
+  
   @media (max-width: $s-width-max) {
     position: relative;
 
@@ -26,6 +28,10 @@
   }
 }  
 
+.nav__container {
+  position: relative;
+}
+
 .nav__toggler {
   @media (max-width: $s-width-max) {
     position: absolute;
@@ -35,5 +41,11 @@
 
     width: 21px;
     height: 20px;
+  }
+}
+
+@media (min-width: $m-width) {
+  .nav__toggler {
+    display: none;
   }
 }

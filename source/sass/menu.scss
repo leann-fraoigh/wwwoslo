@@ -2,6 +2,10 @@
   @include reset-list-style;
 }
 
+.menu__item {
+  overflow: hidden;
+}
+
 .menu__link {
   display: block;
   padding: 13px 40px 13px 100px;
@@ -15,14 +19,53 @@
   background-color: $color-main;
   border-bottom: 1px solid $color-main-darkest; 
 
-  &:hover,
-  &:focus {
-    background-color: $color-main-dark;
+  @media (min-width: $s-width) and (max-width: $s-width-max) {
+    &:hover,
+    &:focus {
+      color: inherit;
+      background-color: $color-main-dark;
+    }
+  
+    &:active {
+      color: $color-lightest-transpatent;
+      background-color: $color-main-darkest;
+    }
+  }
+}
+
+@media (min-width: $m-width) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  &:active {
-    color: $color-lightest-transpatent;
-    background-color: $color-main-darkest;
+  .menu__item:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  .menu__link {
+    padding: 23px 0 21px 0;
+
+    background: none;
+    border-bottom: solid 3px transparent;
+
+    &:hover,
+    &:focus {
+      color: $color-main;
+      text-decoration: none;
+      border-color: $color-main;
+    }
+    
+    &:active {
+      color: $color-lightest-transpatent;
+    }
+  }
+}
+
+@media (min-width: $l-width) {
+  .menu {
+    justify-content: space-around;
   }
 }
 

@@ -13,28 +13,31 @@
     <link href="https://fonts.googleapis.com/css?family=Pattaya%7CRusso+One&display=swap" rel="stylesheet"> 
   </head>
   <body class="page">
-    <header class="header header--showed">
-      <div class="header__wrapper wrapper">
-        <a href="#" class="header__logo logo link">ЧГК Осло</a>
-        <!-- <p class="header__logo logo"> ЧГК Осло</p> -->
-        <!--Menu opened - nav--menu-opened Menu closed - nav--menu-closed-->
-        <nav class="header__nav nav nav--no-js">
+    <header class="header">
+      <!-- <a href="#" class="header__logo logo link">ЧГК Осло</a> -->
+      <div class="header__logo logo"> ЧГК Осло</div>
+      <!--Menu opened - nav--menu-opened Menu closed - nav--menu-closed-->
+      <nav class="header__nav nav nav--no-js">
+        <div class="nav__container wrapper">
           <button class="nav__toggler button button--icon" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="nav__menu menu">
-            <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
-            <li class="menu__item"><a class="menu__link" href="#teams">Команды</a></li>
-            <li class="menu__item"><a class="menu__link" href="#games">Результаты игр</a></li>
-            <li class="menu__item"><a class="menu__link" href="#rules">Правила</a></li>
-            <li class="menu__item"><a class="menu__link" href="#organizers">Организаторы</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#about">О нас</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#teams">Команды</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#games">Результаты игр</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#rules">Правила</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#organizers">Организаторы</a></li>
           </ul>
-        </nav>
-      </div>  
+        </div>  
+      </nav>
     </header>
     <main class="main">
-      <section class="about wrapper" id="about">
-        <h2 class="visually-hidden">О нас</h2>
-        <p>Что? Где? Когда? в Осло!</p>
-        <p>РуНо приглашает принять участие в спортивной версии игры. Хотите освежить свои знания, проверить логику и умение работать в команде? Регистрируйтесь на ближайшую игру!</p>
+      <section class="about" id="about">
+        <div class="about__container wrapper">
+          <div class="about__content">
+            <h2 class="visually-hidden about__title">О нас</h2>
+            <p class="about__text">Что?&nbsp;Где?&nbsp;Когда? в&nbsp;Осло!</p>
+            <p class="about__text">РуНо приглашает принять участие в&nbsp;спортивной версии игры. Хотите освежить свои знания, проверить логику и&nbsp;умение работать в&nbsp;команде? Регистрируйтесь на&nbsp;ближайшую&nbsp;игру!</p>
+          </div>  
       </section>
       <section class="teams" id="teams">
         <div class="teams__wrapper wrapper">
