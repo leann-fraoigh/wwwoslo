@@ -1,3 +1,42 @@
 .about {
-  font-size: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px; 
+  @media (max-width: $s-width-max) {
+    background-color: $color-lightest;
+  }
+}
+
+@media (min-width: $m-width) {
+  .about {
+    max-height: 172px;
+    margin-top: -172px;
+    
+    .about__content {
+      position: relative;
+
+      padding: 1px 35px 1px 35px; 
+      font-size: 20px;
+
+      background-color: $color-lightest;
+
+      &::before {
+        content: "";
+  
+        position: absolute;
+        top: 10px;
+        left: -15px;
+  
+        border: 15px solid transparent;
+        border-bottom-color: #ffffff;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@media (min-width: $l-width) {
+  .about__content {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
