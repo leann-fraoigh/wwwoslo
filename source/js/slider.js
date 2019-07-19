@@ -7,12 +7,9 @@ var rightButton = document.querySelector(".teams__slider-button--right");
 var leftButton = document.querySelector(".teams__slider-button--left");
 
 var sliderWidth = slider.offsetWidth;
-var cardWidth = card.offsetWidth;
+var cardMargin = 3; // Margin right of tht .teams__item element
+var cardWidth = card.offsetWidth + cardMargin;
 var cardCount = slider.querySelectorAll(".teams__item").length;
-
-// var maxX = ((Math.ceil(cardCount / 2) * cardWidth) - sliderWidth);
-slider.scrollLeftMax += cardWidth;
-var maxX = slider.scrollLeftMax;
 
 if (/Mobi|Android/i.test(navigator.userAgent)) {
   leftButton.style.display = "none";
@@ -22,35 +19,38 @@ if (/Mobi|Android/i.test(navigator.userAgent)) {
   // Set left button disabled
   leftButton.disabled = true;
   
-  
-  // Right button 
+  // Add event listener to the right button 
   rightButton.addEventListener("click", function () {
     event.preventDefault();
     
-    if (slider.scrollLeft < maxX) {
+    // Scroll if possible
+    if (slider.scrollLeft < slider.scrollLeftMax) {
       slider.scrollLeft += cardWidth;
     }
     
+    // Enable left button 
     if (leftButton.disabled) {
       leftButton.disabled = false;
     }
   
-    if (slider.scrollLeft >= maxX) {
+    // Disable the button if the maximum scroll reached
+    if (slider.scrollLeft >= slider.scrollLeftMax) {
       rightButton.disabled = true;
     }
   })
   
-  // Left button
+  // Add event listener to the left button
   leftButton.addEventListener("click", function () {
     event.preventDefault();
+    // Scroll if possible
     if (slider.scrollLeft !== 0) {
       slider.scrollLeft -= cardWidth;
     }
-  
+    // Enable right button
     if (rightButton.disabled) {
       rightButton.disabled = false;
     }
-  
+    // Disable the button if the maximum scroll reached
     if (slider.scrollLeft === 0) {
       leftButton.disabled = true;
     }
@@ -62,13 +62,13 @@ if (/Mobi|Android/i.test(navigator.userAgent)) {
     var teamItem = teamItems[i];
     teamItem.addEventListener("focusin", function () {
   
-      if (slider.scrollLeft >= maxX) {
+      if (slider.scrollLeft >= slider.scrollLeftMax) {
         rightButton.disabled = true;
       }
       if (slider.scrollLeft === 0) {
         leftButton.disabled = true;
       }
-      if (slider.scrollLeft < maxX && slider.scrollLeft !== 0) {
+      if (slider.scrollLeft < slider.scrollLeftMax && slider.scrollLeft !== 0) {
         leftButton.disabled = false;
         rightButton.disabled = false;
       }
