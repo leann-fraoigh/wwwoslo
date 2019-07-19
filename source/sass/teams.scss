@@ -7,16 +7,18 @@
 }
 
 .teams__wrapper {
-  position: relative;
-  padding: 0;
+  @media (max-width: $s-width-max) {
+    padding: 0;
+  }
 
+  position: relative;
 
   &::after,
   &::before {
     position: absolute;
     content: "";
     bottom: 0;
-    width: 60px;
+    width: 49px;
     height: 90%;
     z-index: 10;
   }
@@ -87,7 +89,9 @@
 .teams__item {
   width: 88px;
   height: 168px;
+  margin-right: 3px;
   padding:10px 10px 5px 10px;
+  overflow: hidden;
 
   border-radius: 5px;
 
@@ -102,39 +106,38 @@
 }
 
 .teams__photo-container {
-  line-height: 0;
-  font-size: 0;
-}
-
-.teams__modal-photo {
-  margin: (-5px -30px 0 -30px);
-}
-
-.teams__photo {
   width: 88px;
   height: 88px;
-
-  object-fit: cover;
+  
+  // object-fit: cover;
+  background-image: url("../img/owl.svg");
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: $color-basic; 
   border-radius: 50%;
+
+  overflow: hidden;
+}
+
+
+.teams__photo {
+  margin-left: 50%;
+
+  transform: translateX(-50%);
 }
 
 .teams__name {
   margin-top: 10px;
-
+  
   text-align: center;
-
+  
   border: none;
 }
 
 .teams__modal {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%,-50%);
   width: 170px;
-  // height: 90%;
-  min-height: 400px;
+  // min-height: 400px;
   padding: 5px 30px 20px 30px;
 }
 
@@ -143,11 +146,137 @@
   margin-bottom: 8px;
 }
 
-.teams__players-list {
-  @include reset-list-style;
+.teams__modal-close-button {
+  display: none;
+  background-color: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: inherit;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
+.teams__modal-photo-container {
+  margin: (-5px -30px 0 -30px);
 
-.teams__players-item--capitan {
+  line-height: 0; // Othervise the picture element is bigger than img
+}
+
+.teams__players-list {
+  // @include reset-list-style;
+  column-count: 2;
+  padding-left: 0;
+  list-style: none;
+}
+
+.teams__players-item {
+  &::before {
+    content: "— ";
+  }
+
+  &--capitan {
   font-weight: 700;
+  &::before {
+    content: "★ ";
+  }
+  }
+}
+
+@media (min-width: $m-width) {
+  .teams__item {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .teams__wrapper {
+    &::before {
+      left: $m-width-padding;
+    }
+  
+    &::after {
+      right: $m-width-padding;
+    }
+  }
+
+  .teams__slider-button {
+    &--left {
+      left: 25px;
+    }
+    &--right {
+      right: 25px;
+    }
+  }
+
+  .teams__modal {
+    width: 440px;
+    padding: 15px 40px 30px 40px;
+
+    color: $color-darkest;
+    background-color: $color-lightest;
+  }
+
+  .teams__modal-close-button {
+    display: block;
+
+    top: 10px;
+    right: 10px;
+  }
+
+  .teams__modal-photo-container {
+    display: block;
+    min-height: 172px;
+
+    background-image: url("../img/owl.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    background-color: $color-basic;
+
+  }
+
+  .teams__modal-photo {
+    width: 500px;
+  }
+}
+
+@media (min-width: $l-width) {
+  // .teams__wrapper {
+  //   &::before {
+  //     left: $l-width-padding;
+  //   }
+  
+  //   &::after {
+  //     right: $l-width-padding;
+  //   }
+  // }
+
+  // .teams__slider-button {
+  //   &--left {
+  //     left: 70px;
+  //   }
+  //   &--right {
+  //     right: 70px;
+  //   } 
+  // }
+
+  .teams__wrapper {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  
+  .teams__slider-button {
+    display: none;
+  }
+
+  .teams__list {
+    flex-direction: row;
+
+    height: auto;
+  }
 }
