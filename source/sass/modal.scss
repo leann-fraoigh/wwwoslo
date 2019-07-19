@@ -15,3 +15,20 @@
     display: block;
   }
 }
+
+.modal__close-button {
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+
+  border: none;
+}
