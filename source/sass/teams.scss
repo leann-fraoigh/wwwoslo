@@ -36,9 +36,6 @@
 
 .teams__title {
   @include reset-h2-style;
-
-  padding-right: $s-width-padding;
-  padding-left: $s-width-padding;
 }
 
 .teams__slider-button {
@@ -202,6 +199,10 @@
     }
   }
 
+  .teams__title {
+    text-align: center;
+  }
+
   .teams__slider-button {
     &--left {
       left: 25px;
@@ -229,13 +230,6 @@
   .teams__modal-photo-container {
     display: block;
     min-height: 172px;
-
-    background-image: url("../img/owl.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 40px;
-    background-color: $color-basic;
-
   }
 
   .teams__modal-photo {
