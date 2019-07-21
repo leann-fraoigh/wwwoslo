@@ -33,12 +33,15 @@
     
     &:hover,
     &:focus {
-      border-color: $color-basic-light;
+      border-color: $color-main-darkest;
+
+      // border-color: $color-basic-light;
     }
 
     &:active {
-      color: $color-darkest-transparent;
-      background-color: $color-main-light;
+      color: $color-main-darkest;
+      // color: $color-darkest-transparent;
+      // background-color: $color-main-light;
     }  
   }
 }

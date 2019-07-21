@@ -22,20 +22,20 @@
     }
   }
 
-  .button--ghost {
-    border-color: $color-basic-dark;
+//   .button--ghost {
+//     border-color: $color-basic-dark;
     
-    &:hover,
-    &:focus {
-      border-color: $color-basic;
-    }
+//     &:hover,
+//     &:focus {
+//       border-color: $color-basic;
+//     }
 
-    &:active {
-      color: $color-lightest-transpatent;
-      background-color: $color-darkest-light;
-      border-color: $color-darkest-light;
-    }   
-  }
+//     &:active {
+//       color: $color-lightest-transpatent;
+//       background-color: $color-darkest-light;
+//       border-color: $color-darkest-light;
+//     }   
+//   }
 }
 
 @mixin reset-h2-style {
