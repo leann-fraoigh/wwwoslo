@@ -58,7 +58,8 @@
     }
     
     &:active {
-      color: $color-lightest-transpatent;
+      // color: $color-lightest-transpatent;
+      opacity: .6;
     }
   }
 }
