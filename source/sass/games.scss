@@ -12,16 +12,13 @@
     content: "";
     position: absolute;
     bottom: -34px;
-    left: 50%;
-    transform: translateX(-50%);
 
-    width: $s-width;
+    width: 100%;
     height: 34px;
-    box-sizing: border-box;
 
-    border-left: ($s-width / 2) solid transparent;
-    border-right: ($s-width / 2) solid transparent;
-    border-top: 34px solid $color-darkest-light;
+    background-color: inherit;
+
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
   }
 }
 
@@ -51,7 +48,8 @@
   border-bottom-width: 2px;
 
   &--active {
-    border-color: $color-basic-light;
+    // border-color: $color-basic-light;
+    border-color: $color-main-darkest;
   }
 }
 // While score section is empty
@@ -59,3 +57,26 @@
   min-height: 737px;
 }
 
+@media (min-width: $m-width) {
+  .games {
+    &::after {
+      bottom: -65px;
+
+      height: 65px;
+    }
+  }
+
+  .games__wrapper {
+    padding-bottom: 0;
+  }
+
+  .games__title {
+    margin-bottom: 40px;
+    
+    text-align: center;
+  }
+
+  .games__tab-list {
+    justify-content: center;
+  }
+}
