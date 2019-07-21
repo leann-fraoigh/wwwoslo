@@ -7,10 +7,17 @@
 }
 .rules__list {
   // @include reset-list-style;
-  // list-style: square outside url("../img/owl.svg");
-  list-style: square;
+  // list-style: none;
 }
 
-.rules__item:not(:last-child) {
-  margin-bottom: 10px;
+.rules__item {
+  &::marker {
+    content: "—";
+    margin-right: 4px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
+
