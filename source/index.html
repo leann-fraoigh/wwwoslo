@@ -397,10 +397,10 @@
           <ul class="games__tab-list">
             <li class="games__tab-item">
               <!--Class active: games__tab-button--active -->
-              <button class="games__tab-button games__tab-button--active button button--ghost" onclick="openTab(event, 'score')">Баллы</button>
+              <button class="games__tab-button games__tab-button--active button button--ghost" onclick="window.tab.openTab(event, 'score')">Баллы</button>
             </li>
             <li class="games__tab-item">
-              <button class="games__tab-button button button--ghost" onclick="openTab(event, 'rating')">Рейтинг</button>
+              <button class="games__tab-button button button--ghost" onclick="window.tab.openTab(event, 'rating')">Рейтинг</button>
             </li>
           </ul>
           <section class="games__stat score" id="score">
@@ -410,10 +410,10 @@
             <div class="score__pagination-container"> 
               <p class="score__pagination-description">2019:</p>
               <ul class="score__pagination-list">
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="createChart(event, '1')">09.02</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="createChart(event, '2')">07.03</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="createChart(event, '3')">06.04</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="createChart(event, '4')">24.05</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(event, '1')">09.02</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(event, '2')">07.03</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(event, '3')">06.04</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(event, '4')">24.05</button></li>
               </ul>
             </div>  
             <template id="score__diagram-template">
