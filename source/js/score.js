@@ -8,7 +8,7 @@
   var buttons = document.querySelectorAll('.score__pagination-button');
 
 
-  var drawChart = function (event, button) {
+  var drawChart = function (button) {
     // Draw one bar (virtually)
     var createBar = function (points, color, name) {
       var clonedBar = document.importNode(diagramTemplate.content, true)
@@ -23,7 +23,6 @@
     
     for (var i = 0; i < window.data.teams_results.length; i++) {
       var currentTeam = window.data.teams_results[i];
-      // var buttonNumber = type.target.classList[1].slice(26, 27);
       var buttonNumber = button;
       var gameNumber = 'game' + buttonNumber;
       var currentRating = currentTeam[gameNumber].points;
@@ -35,7 +34,7 @@
   };
 
   // if template works, render and insert chart
-  var createChart = function(event, button) {
+  var createChart = function(button) {
     // Make all button not active
     for(var i = 0; i < buttons.length; i++) {
       buttons[i].className = buttons[i].className.replace(" score__pagination-button--active", "");
@@ -47,7 +46,7 @@
       while (diagram.firstChild) {
         diagram.removeChild(diagram.firstChild);
       }
-      drawChart(event, button);
+      drawChart(button);
     } else {
       var message = 'Извините, эта функция не работает в вашем браузере';
       var p = document.createElement('p');
@@ -55,7 +54,7 @@
     }
   };  
 
-  createChart('click', buttons.length);
+  createChart(buttons.length);
 
   window.score = {
     createChart: createChart,
