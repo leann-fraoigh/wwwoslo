@@ -36,6 +36,7 @@
 
 .teams__title {
   @include reset-h2-style;
+  margin-left: $s-width-padding;
 }
 
 .teams__slider-button {
