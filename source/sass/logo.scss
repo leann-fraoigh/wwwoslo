@@ -1,4 +1,7 @@
 .logo {
+  position: relative;
+  overflow: hidden;
+
   font-size: 30px;
   font-family: 'Russo One', sans-serif;
   text-align: center;
@@ -8,6 +11,23 @@
   width: 100%;
   min-height: 60px;
   padding-top: 25px;
+
+  &::after {
+    content: "β-version";
+    position: absolute;
+    top: 15px;
+    left: -42px;
+
+    width: 150px;
+    padding-bottom: 2px;
+
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 18px;
+
+    background-color: plum;
+
+    transform: rotate(-45deg);
+  }  
 }
 
 @media (min-width: $m-width) {
@@ -18,5 +38,10 @@
     padding-top: 80px;
     
     font-size: 60px;
+
+    &::after {
+      top: 28px;
+      left: -32px;
+    }
   }
 }
