@@ -632,7 +632,8 @@ template {
     bottom: 0;
     width: 49px;
     height: 90%;
-    z-index: 10; }
+    z-index: 10;
+    pointer-events: none; }
   .teams__wrapper::before {
     left: 0;
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(#252525));
@@ -1040,7 +1041,7 @@ template {
   .rating__diagram {
     width: 413px; }
   .rating .tick text {
-    font-size: 8px; }
+    font-size: 10px; }
   .rating .data text {
     font-size: 14px; }
   .rating__pagination-container {
