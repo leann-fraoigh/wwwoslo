@@ -21,6 +21,8 @@
     width: 49px;
     height: 90%;
     z-index: 10;
+
+    pointer-events: none;
   }
   
   &::before {
