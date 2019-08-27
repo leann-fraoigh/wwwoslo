@@ -126,7 +126,7 @@
         return h - textH + padding + 7;
       })
       // .attr("font-size", "14px")
-      .attr("style", "writing-mode: tb")
+      .attr("style", "writing-mode: vertical-rl")
       .attr("fill", "white");
     }  
 
