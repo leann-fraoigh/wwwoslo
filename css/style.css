@@ -636,12 +636,12 @@ template {
     pointer-events: none; }
   .teams__wrapper::before {
     left: 0;
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(#252525));
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #252525); }
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(225, 225, 225, 0)), to(#252525));
+    background-image: linear-gradient(to left, rgba(225, 225, 225, 0), #252525); }
   .teams__wrapper::after {
     right: 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#252525));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #252525); }
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#252525));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #252525); }
 
 .teams__title {
   font-size: 30px;
