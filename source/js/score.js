@@ -50,6 +50,7 @@
     } else {
       var message = 'Извините, эта функция не работает в вашем браузере';
       var p = document.createElement('p');
+      p.textContent = message;
       diagram.appendChild(p);
     }
   };  

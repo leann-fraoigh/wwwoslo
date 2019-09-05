@@ -156,6 +156,22 @@
               </li>
               <li class="teams__item">
                 <div class="teams__photo-container">
+                  <!-- <img src="img/photo-placeholder.png" alt="Фото команды" class="teams__photo" height="88"> -->
+                </div>
+                <button class="teams__name button">Коллективный разум</button>
+                <section class="teams__modal modal">
+                  <button class="teams__modal-close-button modal__close-button button" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <picture class="teams__modal-photo-container">
+                    <!-- <source media="(min-width: 780px)" data-srcset="img/@500.jpg 1x, img/@1000.jpg 2x"> -->
+                    <img data-src="img/photo-placeholder.png" alt="Фото команды" class="teams__modal-photo lazyload" width="230">
+                  </picture>
+                  <h3 class="teams__modal-title">Коллективный разум</h3>
+                </section>
+              </li>
+              <li class="teams__item">
+                <div class="teams__photo-container">
                   <img src="img/korgi@250.jpg" alt="Фото команды" class="teams__photo" height="88">
                 </div>
                 <button class="teams__name button">Корги Чака Норриса</button>
@@ -414,6 +430,7 @@
                 <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(2)">07.03</button></li>
                 <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(3)">06.04</button></li>
                 <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(4)">24.05</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(5)">30.08</button></li>
               </ul>
             </div>  
             <template id="score__diagram-template">
@@ -422,7 +439,7 @@
                   <span class="score__diagram-element-name"></span>
                   <span class="visually-hidden score__diagram-element-data"></span>
                 </button>
-              </li>  
+              </li>
             </template>
           </section>
           <section class="games__stat rating" id="rating" style="display:none">
@@ -436,6 +453,7 @@
                 <li class="rating__pagination-element"><button class="rating__pagination-button button button--ghost" type="button" onclick="window.rating.createChart(2)">07.03</button></li>
                 <li class="rating__pagination-element"><button class="rating__pagination-button button button--ghost" type="button" onclick="window.rating.createChart(3)">06.04</button></li>
                 <li class="rating__pagination-element"><button class="rating__pagination-button button button--ghost" type="button" onclick="window.rating.createChart(4)">24.05</button></li>
+                <li class="rating__pagination-element"><button class="rating__pagination-button button button--ghost" type="button" onclick="window.rating.createChart(5)">30.08</button></li>
               </ul>
             </div>  
           </section>

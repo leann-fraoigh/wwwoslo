@@ -22,6 +22,11 @@
         qestions: 19,
         points: 20.5,
         rating: 9,
+      },
+      game5: {
+        qestions: 14,
+        points: 19.5,
+        rating: 2,
       }
     },
   
@@ -46,6 +51,11 @@
         qestions: 16,
         points: 20,
         rating: 8,
+      },
+      game5: {
+        qestions: 22,
+        points: 29,
+        rating: 13,
       }
     },
   
@@ -70,6 +80,11 @@
         qestions: 15,
         points: 17.5,
         rating: 5,
+      },
+      game5: {
+        qestions: 21,
+        points: 28,
+        rating: 11.5,
       }
     },
   
@@ -94,6 +109,11 @@
         qestions: 19,
         points: 25.5,
         rating: 13,
+      },
+      game5: {
+        qestions: 23,
+        points: 35,
+        rating: 15,
       }
     },
   
@@ -118,6 +138,11 @@
         qestions: 9,
         points: 10,
         rating: 1,
+      },
+      game5: {
+        qestions: 15,
+        points: 20,
+        rating: 3,
       }
     },
   
@@ -142,6 +167,11 @@
         qestions: 12,
         points: 13.5,
         rating: 2,
+      },
+      game5: {
+        qestions: 17,
+        points: 23,
+        rating: 4,
       }
     },
   
@@ -166,6 +196,11 @@
         qestions: 27,
         points: 35,
         rating: 15,
+      },
+      game5: {
+        qestions: 24,
+        points: 34,
+        rating: 14,
       }
     },
   
@@ -190,6 +225,11 @@
         qestions: 19,
         points: 25, 
         rating: 12,
+      },
+      game5: {
+        qestions: 20,
+        points: 27.5,
+        rating: 9.5,
       }
     },
   
@@ -214,6 +254,11 @@
         qestions: 17,
         points: 22,
         rating: 10,
+      },
+      game5: {
+        qestions: 20,
+        points: 27,
+        rating: 7.5,
       }
     },
   
@@ -238,6 +283,11 @@
         qestions: 14,
         points: 16.5,
         rating: 4,
+      },
+      game5: {
+        qestions: 27,
+        points: 37.5,
+        rating: 16,
       }
     },
   
@@ -262,6 +312,11 @@
         qestions: 11,
         points: 15,
         rating: 3,
+      },
+      game5: {
+        qestions: 18,
+        points: 24.5,
+        rating: 5,
       }
     },
   
@@ -283,6 +338,11 @@
         rating: 4,
       },
       game4: {
+        qestions: 0,
+        points: 0,
+        rating: 0,
+      },
+      game5: {
         qestions: 0,
         points: 0,
         rating: 0,
@@ -310,6 +370,11 @@
         qestions: 20,
         points: 26,
         rating: 14,
+      },
+      game5: {
+        qestions: 19,
+        points: 27,
+        rating: 7.5,
       }
     },
   
@@ -332,6 +397,11 @@
         rating: 1,
       },
       game4: {
+        qestions: 0,
+        points: 0,
+        rating: 0,
+      },
+      game5: {
         qestions: 0,
         points: 0,
         rating: 0,
@@ -359,6 +429,11 @@
         qestions: 18,
         points: 23,
         rating: 11,
+      },
+      game5: {
+        qestions: 20,
+        points: 25.5,
+        rating: 6,
       }
     },
   
@@ -380,6 +455,11 @@
         rating: 0,
       },
       game4: {
+        qestions: 0,
+        points: 0,
+        rating: 0,
+      },
+      game5: {
         qestions: 0,
         points: 0,
         rating: 0,
@@ -407,6 +487,11 @@
         qestions: 14,
         points: 18,
         rating: 6.5,
+      },
+      game5: {
+        qestions: 20,
+        points: 28,
+        rating: 11.5,
       }
     },
   
@@ -431,6 +516,40 @@
         qestions: 15,
         points: 18,
         rating: 6.5,
+      },
+      game5: {
+        qestions: 19,
+        points: 27.5,
+        rating: 9.5,
+      }
+    },
+
+    {
+      name: "Коллективный разум",
+      game1: {
+        qestions: 0,
+        points: 0,
+        rating: 0,
+      },
+      game2: {
+        points: 0,
+        qestions: 0,
+        rating: 0,
+      },
+      game3: {
+        qestions: 0,
+        points: 0,
+        rating: 0,
+      },
+      game4: {
+        qestions: 0,
+        points: 0,
+        rating: 0,
+      },
+      game5: {
+        qestions: 12,
+        points: 15,
+        rating: 1,
       }
     },
   ];
