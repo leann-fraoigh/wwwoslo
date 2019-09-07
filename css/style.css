@@ -853,7 +853,9 @@ template {
   border-left: none;
   border-bottom-width: 2px; }
   .games__tab-button--active {
-    border-color: #6a4d38; }
+    border-color: #6a4d38;
+    -webkit-box-shadow: 0 2px 0 0 #6a4d38;
+            box-shadow: 0 2px 0 0 #6a4d38; }
 
 @media (min-width: 768px) {
   .games::after {
