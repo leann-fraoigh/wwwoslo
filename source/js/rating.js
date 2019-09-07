@@ -12,6 +12,7 @@
   var textH = 179;
   var padding = 35;
   var barPadding = 7;
+  var labelAddPadding = 2;
 
   var newDataset = [];
 
@@ -119,14 +120,8 @@
       .text(function(d) {
         return d.name;
       })
-      .attr("x", function(d, i) {
-        return i * ((w - padding) / newDataset.length) + (w / newDataset.length - barPadding) / 2 + padding;
-      })
-      .attr("y", function(d) {
-        return h - textH + padding + 7;
-      })
-      // .attr("font-size", "14px")
-      .attr("style", "writing-mode: vertical-rl")
+      .attr('transform', function(d,i) {
+      return 'translate( ' + (i * ((w - padding) / newDataset.length) + padding + labelAddPadding) + ' , '+(h - textH + padding + barPadding)+'),'+ 'rotate(90)';})
       .attr("fill", "white");
     }  
 
