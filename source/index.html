@@ -413,10 +413,10 @@
           <ul class="games__tab-list">
             <li class="games__tab-item">
               <!--Class active: games__tab-button--active -->
-              <button class="games__tab-button games__tab-button--active button button--ghost" onclick="window.tab.openTab(event, 'score')">Баллы</button>
+              <button class="games__tab-button games__tab-button--active button button--ghost tooltip" onclick="window.tab.openTab(event, 'score')">Баллы<p class="tooltip-text">Баллы, заработанные командами в каждой игре<i></i></p></button>
             </li>
             <li class="games__tab-item">
-              <button class="games__tab-button button button--ghost" onclick="window.tab.openTab(event, 'rating')">Рейтинг</button>
+              <button class="games__tab-button button button--ghost tooltip" onclick="window.tab.openTab(event, 'rating')">Рейтинг<p class="tooltip-text">Суммарный рейтинг команд по итогам прошедших игр<i></i></p></button>
             </li>
           </ul>
           <section class="games__stat score" id="score">
