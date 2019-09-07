@@ -48,14 +48,10 @@
   border-bottom-width: 2px;
 
   &--active {
-    // border-color: $color-basic-light;
     border-color: $color-main-darkest;
+    box-shadow: 0 2px 0 0 $color-main-darkest;
   }
 }
-// While score section is empty
-// .games__stat {
-//   min-height: 737px;
-// }
 
 @media (min-width: $m-width) {
   .games {
