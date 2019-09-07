@@ -27,12 +27,14 @@
   
   &::before {
     left: 0;
-    background-image: linear-gradient(to left, rgba(225,225,225,0), $color-darkest-light);
+    background-image: url("../img/gradient-left.png");
+    // background-image: linear-gradient(to left, rgba(0,0,0,0.0), $color-darkest-light);
   }
 
   &::after {
     right: 0;
-    background-image: linear-gradient(to right, rgba(255,255,255,0), $color-darkest-light);
+    background-image: url("../img/gradient-right.png");
+    // background-image: linear-gradient(to right, rgba(0,0,0,0.0), $color-darkest-light);
   }
 }
 
