@@ -1,6 +1,6 @@
 'use strict';
 (function() {
-  var TEAMS_RESULTS = [
+  var TEAMS_RESULTS_UNSORTED = [
     {
       name: "Друзья друзей Друзя",
       game1: {
@@ -553,6 +553,26 @@
       }
     },
   ];
+
+
+  // Sort alphabetically
+  var items = [
+    { name: 'Edward', value: 21 },
+    { name: 'Sharpe', value: 37 },
+    { name: 'And', value: 45 },
+    { name: 'The', value: -12 },
+    { name: 'Magnetic' },
+    { name: 'Zeros', value: 37 }
+  ];
+  var TEAMS_RESULTS = TEAMS_RESULTS_UNSORTED.sort(function (a, b) {
+    if (a.name > b.name) {
+      return 1;
+    }
+    if (a.name < b.name) {
+      return -1;
+    }
+    return 0;
+  });
 
   window.data = {
     teams_results: TEAMS_RESULTS,
