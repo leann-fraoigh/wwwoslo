@@ -369,6 +369,9 @@ template {
   .link:active {
     color: #6a4d38; }
 
+.link--underlined {
+  text-decoration: underline; }
+
 .button {
   display: block;
   width: 100%;
