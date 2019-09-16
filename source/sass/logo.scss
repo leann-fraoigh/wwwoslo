@@ -1,47 +1,11 @@
 .logo {
-  position: relative;
-  overflow: hidden;
-
-  font-size: 30px;
-  font-family: 'Russo One', sans-serif;
-  text-align: center;
-  // vertical-align: center;
-
-  display: block;
-  width: 100%;
-  min-height: 60px;
-  padding-top: 25px;
-
-  &::after {
-    content: "β-version";
-    position: absolute;
-    top: 15px;
-    left: -42px;
-
-    width: 150px;
-    padding-bottom: 2px;
-
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 18px;
-
-    background-color: plum;
-
-    transform: rotate(-45deg);
-  }  
+  width: 147px;
+  height: 37px;
 }
 
 @media (min-width: $m-width) {
   .logo {
-    box-sizing: border-box;
-    
-    height: 400px;
-    padding-top: 80px;
-    
-    font-size: 60px;
-
-    &::after {
-      top: 28px;
-      left: -32px;
-    }
+    width: 291px;
+    height: 73px;
   }
 }

@@ -22,6 +22,33 @@
 
 }
 
+.header__logo {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 65px;
+  padding-top: 20px;
+
+  text-align: center;
+
+  &::after {
+    content: "β-version";
+    position: absolute;
+    top: 15px;
+    left: -42px;
+
+    width: 150px;
+    padding-bottom: 2px;
+
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 18px;
+
+    background-color: plum;
+
+    transform: rotate(-45deg);
+  }  
+}
+
 @media (min-width: $m-width) {
   .header {
     background-repeat: no-repeat;
@@ -39,6 +66,14 @@
   .header__logo {
     display: block;
     order: 2;
+
+    min-height: 344px;
+    padding-top: 56px;
+
+    &::after {
+      top: 28px;
+      left: -32px;
+    }
   }
 
   .header__nav {
@@ -48,6 +83,6 @@
 
 @media (min-width: $l-width) {
   .header__logo {
-    height: 648px;
+    height: 560px;
   }
 }
