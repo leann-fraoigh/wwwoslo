@@ -444,6 +444,25 @@ template {
   color: #ffffff;
   background-color: #000000; }
 
+.header__logo {
+  position: relative;
+  overflow: hidden;
+  min-height: 65px;
+  padding-top: 20px;
+  text-align: center; }
+  .header__logo::after {
+    content: "β-version";
+    position: absolute;
+    top: 15px;
+    left: -42px;
+    width: 150px;
+    padding-bottom: 2px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 18px;
+    background-color: plum;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
 @media (min-width: 768px) {
   .header {
     background-repeat: no-repeat;
@@ -460,7 +479,12 @@ template {
     display: block;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; }
+            order: 2;
+    min-height: 344px;
+    padding-top: 56px; }
+    .header__logo::after {
+      top: 28px;
+      left: -32px; }
   .header__nav {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -468,7 +492,7 @@ template {
 
 @media (min-width: 1200px) {
   .header__logo {
-    height: 648px; } }
+    height: 560px; } }
 
 .nav {
   background-color: #000000; }
@@ -555,38 +579,13 @@ template {
         justify-content: space-around; } }
 
 .logo {
-  position: relative;
-  overflow: hidden;
-  font-size: 30px;
-  font-family: 'Russo One', sans-serif;
-  text-align: center;
-  display: block;
-  width: 100%;
-  min-height: 60px;
-  padding-top: 25px; }
-  .logo::after {
-    content: "β-version";
-    position: absolute;
-    top: 15px;
-    left: -42px;
-    width: 150px;
-    padding-bottom: 2px;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 18px;
-    background-color: plum;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
+  width: 147px;
+  height: 37px; }
 
 @media (min-width: 768px) {
   .logo {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    height: 400px;
-    padding-top: 80px;
-    font-size: 60px; }
-    .logo::after {
-      top: 28px;
-      left: -32px; } }
+    width: 291px;
+    height: 73px; } }
 
 .about {
   padding-top: 1px;
