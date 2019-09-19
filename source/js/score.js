@@ -13,7 +13,9 @@
   var padding = 35;
   var barPadding = 7;
   var labelAddPadding = 2;
-  var maxScore = 50;
+  var domainMax = 50; // Max Score
+  var ticksNumber = 51;
+  var tickPadding = 15
 
   var newDataset = [];
 
@@ -52,16 +54,16 @@
 
     // Defining Y scale
     var yScale = d3.scaleLinear()
-      .domain([0, maxScore])
+      .domain([0, domainMax])
       .range([(h - textH), 0]);
 
 
     // Define Y axis
     var yAxis = d3.axisLeft()
       .scale(yScale)
-      .ticks(51)
+      .ticks(ticksNumber)
       .tickSizeInner([-w])
-      .tickPadding(15);
+      .tickPadding(tickPadding);
 
     // Create SVG
     var svg = d3.select(".score__diagram")

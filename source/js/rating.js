@@ -13,6 +13,9 @@
   var padding = 35;
   var barPadding = 7;
   var labelAddPadding = 2;
+  var domainMax = 50; // Max Rating
+  var ticksNumber = 6;
+  var tickPadding = 15
 
   var newDataset = [];
 
@@ -70,9 +73,9 @@
     // Define Y axis
     var yAxis = d3.axisLeft()
       .scale(yScale)
-      .ticks(6)
+      .ticks(ticksNumber)
       .tickSizeInner([-w])
-      .tickPadding(15);
+      .tickPadding(tickPadding);
 
     // Create SVG
     var svg = d3.select(".rating__diagram")
