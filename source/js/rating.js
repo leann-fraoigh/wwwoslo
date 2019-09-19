@@ -38,7 +38,6 @@
       newDataset[i].rating = totalRating;
     }
   } 
-
   
   var createChart = function(button) {
     //Make all buttons not active
@@ -47,7 +46,9 @@
     }
     // Make current button active
     buttons[button - 1].className += " rating__pagination-button--active";
+    //Get new data
     getAllRatings(button);
+    // Draw chart
     drawChart();
   }
 
@@ -78,8 +79,6 @@
       .append("svg")
       .attr("preserveAspectRatio", "xMinYMin meet")
       .attr("viewBox", "0 0" + " " + w + " " + h);
-      // .attr("width", w)
-      // .attr("height", h);
 
     // Create Y axis 
     svg.append("g")
@@ -97,15 +96,15 @@
       .append("rect")
       // Set bar position
       .attr("x", function(d, i) {
-        return i * ((w - padding) / newDataset.length) + padding;
+        return Math.floor(i * ((w - padding) / newDataset.length) + padding);
       })
       .attr("y", function(d) {
-        return yScale(d.rating) + padding;
+        return Math.floor(yScale(d.rating) + padding);
       })
       // Set bar size
-      .attr("width", (w - padding)/ newDataset.length - barPadding)
+      .attr("width", Math.floor((w - padding)/ newDataset.length - barPadding))
       .attr("height", function(d) {
-        return h - textH - yScale(d.rating);
+        return h - textH - Math.floor(yScale(d.rating));
       })
       .attr("fill", function(d, i) {
         return COLORS[i];
@@ -123,7 +122,7 @@
       .attr('transform', function(d,i) {
       return 'translate( ' + (i * ((w - padding) / newDataset.length) + padding + labelAddPadding) + ' , '+(h - textH + padding + barPadding)+'),'+ 'rotate(90)';})
       .attr("fill", "white");
-    }  
+  }  
 
     createChart(buttons.length);
 

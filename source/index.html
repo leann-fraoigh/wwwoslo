@@ -8,7 +8,7 @@
     content="width=device-width, initial-scale=1"
     >
     <meta name="description" content="&laquo;Что? Где? Когда?&raquo; в Осло: список команд, результаты турниров, информация для желающих присоединиться!">
-    <!-- For FB -->
+    <!-- For Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://leann-fraoigh.github.io/what-where-when/">
     <meta property="og:title" content="ЧГК Осло">
@@ -16,14 +16,14 @@
     <meta property="og:image:secure_url" content="https://leann-fraoigh.github.io/what-where-when/img/fb-img.jpg">
     <meta property="og:description" content="&laquo;Что? Где? Когда?&raquo; в Осло: список команд, результаты турниров, информация для желающих присоединиться!">
     <meta property="og:locale" content="ru_RU">
-    <!-- For FB ends -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="fonts/pt-sans-narrow-v10-latin_cyrillic-700.woff2" as="font">
-    <link rel="preload" href="fonts/pt-sans-narrow-v10-latin_cyrillic-regular.woff2" as="font">
+    <!-- Fonts -->
+    <link rel="preload" href="fonts/pt-sans-narrow-v10-latin_cyrillic-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt-sans-narrow-v10-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page">
     <header class="header">
-      <!-- <a href="#" class="header__logo logo link">ЧГК Осло</a> -->
       <div class="header__logo">
         <img src="img/logo.svg" class="logo" alt="Что Где Когда Осло">
       </div>
@@ -432,26 +432,18 @@
           </ul>
           <section class="games__stat score" id="score">
             <h3 class="h3 visually-hidden">Баллы</h3>
-            <ul class="score__diagram">
-            </ul>
+            <div class="score__diagram">
+            </div>
             <div class="score__pagination-container"> 
               <p class="score__pagination-description">2019:</p>
               <ul class="score__pagination-list">
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(1)">09.02</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(2)">07.03</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(3)">06.04</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(4)">24.05</button></li>
-                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart(5)">30.08</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart2(1)">09.02</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart2(2)">07.03</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart2(3)">06.04</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart2(4)">24.05</button></li>
+                <li class="score__pagination-element"><button class="score__pagination-button button button--ghost" type="button" onclick="window.score.createChart2(5)">30.08</button></li>
               </ul>
             </div>  
-            <template id="score__diagram-template">
-              <li class="score__diagram-element-container">
-                <button type="button" class='score__diagram-element'>
-                  <span class="score__diagram-element-name"></span>
-                  <span class="visually-hidden score__diagram-element-data"></span>
-                </button>
-              </li>
-            </template>
           </section>
           <section class="games__stat rating" id="rating" style="display:none">
             <h3 class="h3 visually-hidden">Рейтинг</h3>
@@ -515,13 +507,13 @@
     </footer>   
 
     <script src="js/data.min.js"></script>
-    <script src="js/score.min.js"></script>
     <script src="js/menu.min.js"></script>
     <script src="js/slider.min.js"></script>
     <script src="js/modal.min.js"></script>
     <script src="js/tab.min.js"></script>
     <script src="js/lazysizes.min.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="js/score.min.js"></script>
     <script src="js/rating.min.js"></script>
 
   </body>
