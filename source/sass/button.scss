@@ -6,6 +6,8 @@
   background-color: transparent;
   cursor: pointer;
 
+  transition: all .1s ease-out;
+
   &:hover,
   &:focus {
     background-color: transparent;

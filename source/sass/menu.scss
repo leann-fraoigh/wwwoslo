@@ -24,11 +24,13 @@
     &:focus {
       color: inherit;
       background-color: $color-main-dark;
+      text-decoration: none;
     }
   
     &:active {
       color: $color-lightest-transpatent;
       background-color: $color-main-darkest;
+      text-decoration: none;
     }
   }
 }

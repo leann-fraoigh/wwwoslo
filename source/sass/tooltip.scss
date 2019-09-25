@@ -1,14 +1,17 @@
-.tooltip {
+.tooltip-parent {
     position: relative;
   }
   
-.tooltip-text {
+.tooltip-parent__text {
     position: absolute;
     top: 25px;
     left: 50%;
     z-index: 100;
 
-    display: none;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0.4;
+    // display: none;
     box-sizing: border-box;
     min-width: 200px;
     padding: 10px 20px;
@@ -21,14 +24,19 @@
     // border: 1px solid $color-lightest;
     box-shadow: 0 1px 8px rgba(0,0,0,0.5);
     
+    transform: translate(-50%, -15%);
+    transition: all .1s ease-out;
+}
+  
+.tooltip-parent:hover .tooltip-parent__text {
+    // display: block;
+    visibility: visible;
+    opacity: 1;
     transform: translate(-50%, 0);
+
 }
   
-.tooltip:hover .tooltip-text {
-    display: block;
-}
-  
-.tooltip-text i {
+.tooltip-parent__text i {
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -40,7 +48,7 @@
     overflow: hidden;
 }
   
-.tooltip-text i::after {
+.tooltip-parent__text i::after {
     content:'';
     position: absolute;
     left: 50%;
