@@ -478,8 +478,8 @@
     },
   
     {
-      // aka Отложенный успех
-      name: "Always moving forward",
+      // aka Always moving forward
+      name: "Отложенный успех",
       game1: {
         questions: 0,
         points: 0,
